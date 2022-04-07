@@ -1,0 +1,44 @@
+@import "../../styles/breakpoints.scss";
+
+.header-container {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  height: 10rem;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1280px;
+
+    @include media(">=1560px") {
+      max-width: 1520px;
+    }
+
+    .navbar li {
+      display: inline-block;
+      padding: 0px 20px;
+      font-size: var(--h5);
+      
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      
+      @include media("<=800px") {
+        display: none;
+      }
+    }
+
+    .logo {
+        font-size: var(--h5);
+    }
+  }
+}
