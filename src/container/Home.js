@@ -9,6 +9,7 @@ import "../styles/index.scss";
 
 // Components
 import Header from "../components/Header";
+import Hero from "../components/Hero";
 // import Footer from "../components/Footer/footer";
 
 // Pages
@@ -21,7 +22,7 @@ import Header from "../components/Header";
 //   { path: "/about-me", name: "AboutMe", Component: AboutMe },
 // ];
 
-const App = () => {
+const Home = () => {
   const ref = useRef(null);
   const [preloader, setPreload] = useState(true);
 
@@ -74,6 +75,7 @@ const App = () => {
           ref={ref}
         >
           <Header />
+          <Hero />
 
           {/* <div className="App">
             {routes.map(({ path, Component }) => (
@@ -89,4 +91,4 @@ const App = () => {
     </>
   );
 };
-export default App;
+export default Home;
