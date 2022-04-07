@@ -1,12 +1,13 @@
 import React from 'react';
-import './index.scss'
+import './index.scss';
+import logo from '../../images/sanblas.png'
 
 export default function Header() {
   return (
     <div className='header-container'>
         <div className="wrapper">
-            <a href="#" className='logo'>
-                Logo Goes Here
+            <a href="#">
+                <img src={logo} alt="logo-sanblas" className='logo' />
             </a>
             <ul className="navbar">
                 <li>
