@@ -2,13 +2,15 @@
 
 .hero-container {
     padding-top: 20rem;
+    margin: 0 5vw;
 
     .wrapper {
-        max-width: 1280px;
+        display: flex;
+        justify-content: space-between;
         
         .intro {
-            font-size: var(--h4);
-            max-width: 1280px;
+            font-size: var(--h3);
         }
+
     }
 }
